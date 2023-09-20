@@ -40,6 +40,10 @@
                 <a href="<?php echo base_url(); ?>index.php/usuarios/logout">
 				        <button type="button" class="btn btn-danger">Cerrar sesion</button>
 			          </a> 
+                
+                <a href="<?php echo base_url(); ?>index.php/usuarios/logout">
+				        <button type="button" class="btn btn-danger">cerrar</button>
+			          </a> 
 
               <br>  
 
