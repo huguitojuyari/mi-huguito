@@ -16,6 +16,17 @@ class Producto extends CI_Controller {
 		$this->load->view('inclte/pie'); 		
 	}
 	// PARA MOSTRAR EL INICIO 
+	public function indexvista()
+	{	
+		$lista=$this->cliente_model->listaclienteslte();
+		$data['clientes']=$lista;	
+		$this->load->view('inclte/cabecera');
+		$this->load->view('inclte/menusuperior');
+		$this->load->view('inclte/menulateral');		
+		$this->load->view('principal');
+		$this->load->view('inclte/pie'); 		
+	}
+
 
 	// PARA MOSTRAR EL CLIENTE
 	public function indexpro()
