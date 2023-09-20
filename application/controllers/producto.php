@@ -135,6 +135,14 @@ class Producto extends CI_Controller {
 	}
 	///////// subier foto }
 
+	public function habilitar2()
+	{
+		$idproducto=$_POST['idproducto'];
+		$data['estado']='1';
+
+		$this->producto_model->modificarclientelte($idproducto,$data);
+		redirect('producto/deshabilitadoslte','refresh');
+	}
 
 	
 
@@ -153,6 +161,7 @@ class Producto extends CI_Controller {
 			redirect('usuarios/index/2','refresh');
 		}
 	}
+	
 
 
 	
